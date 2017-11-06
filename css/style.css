@@ -1,0 +1,93 @@
+.jumbotron {
+	background-color: tomato;
+	color: #fff;
+	padding: 100px 25px;
+}
+.container-fluid {
+	padding: 60px 50px;
+}
+.bg-grey {
+	background-color: #f6f6f6
+}
+
+.btn {
+	transition: all 0.3s ease;
+}
+.subscribe-btn {
+	background-color: gray;
+	color: #fff;
+}
+.subscribe-btn:hover, .subscribe-btn:focus {
+	background-color: lightgray;
+	color: tomato;
+}
+
+.logo {
+	color: tomato;
+	font-size: 200px;
+}
+.logo-small {
+	color: tomato;
+	font-size: 50px;
+}
+
+.thumbnail {
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.3);
+	box-shadow: 8px 10px 10px rgba(0,0,0,0.3);
+}
+.thumbnail .description {
+	padding: 15px 5px;
+}
+
+.img-container {
+	height: 400px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.multi-item-carousel .carousel-inner > .item {
+	transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+	left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+	left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+	left: -33%;
+}
+.multi-item-carousel .carousel-inner .next {
+	left: 33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.multi-item-carousel .carousel-inner > .item {
+		transition: 500ms ease-in-out left;
+		transition: 500ms ease-in-out all;
+		backface-visibility: visible;
+		transform: none !important;
+	}
+}
+.multi-item-carousel .carouse-control.left, .multi-item-carousel .carouse-control.right {
+	background-image: none;
+}
+
+@media only screen and (max-width: 992px) {
+	.img-container {
+		height: 300px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.img-container {
+		height: 200px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.img-container {
+		height: 100px;
+	}
+}
