@@ -13,6 +13,15 @@ $(function() {
 		}
 	});
 
+	// close an open collapsed navbar when clicking outside of the navbar element
+	$(document).click(function(event) {
+		var clickover = $(event.target);
+		var opened = $('.navbar-collapse').hasClass('in');
+		if (opened === true && !clickover.hasClass('navbar-toggle')) {
+			$('button.navbar-toggle').click();
+		}
+	});
+
 	// Multi-item Carousel
 	// https://codepen.io/mephysto/pen/ZYVKRY
 	// 1) instantiate the Bootstrap carousel
