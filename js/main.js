@@ -29,7 +29,7 @@ $(function() {
 		interval: false
 	});
 	// 2) for every slide in carousel, copy the next slide's item in the slide
-	// 3 ) do the same for the next, next item
+	// 3) do the same for the next, next item
 	$('.multi-item-carousel .item').each(function() {
 		var next = $(this).next();
 		
